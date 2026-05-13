@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title> My message for u</title>
+
+   <style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+}
+
+.lock-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.lock-box{
+    background: pink;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px rgba(0,0,0,0.2);
+
+}
+
+.lock-box input{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #696464;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.lock-box button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:rgb(68, 32, 38);
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+.lock-box button:hover{
+    background-color: lightblue;
+
+}
+
+#message{
+    color: red;
+    margin-top: 10px;
+
+}
+
+#website{
+    display: none;
+
+}
+
+
+
+header{
+
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.container{
+
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    bore-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1{
+    margin-top: 0;
+}
+
+p{
+    font-sized: 18px;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+.main-button{
+    marin-top: 15px;
+    padding: 20px;
+    border: 30px;
+    background-color: rgb(68, 32, 38);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: lightblue;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    color: #777;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.gallery img {
+    border-radius: 60px;
+}
+   </style>
+
+</head>
+
+<body>
+
+    <div class="lock-screen" id="lockscreen">
+        <div class="lock-box">
+            <input type="password" id="passcode" placeholder="Enter Passcode">
+            
+            <br>
+
+<button onclick="unlockWebsite()"> Enter</button>
+<p id="message"></p>
+
+
+        </div>
+    </div>
+
+    <div id="website"> 
+
+<header>
+    <h1> Hi Baby,This is an Exclusive Website</h1>
+</header>
+
+<div class="container">
+
+<h2>This is For You</h2>
+
+<p>
+
+    I missed you so much baby, I love you so much, I can't wait to see you again. You are the most important person in my life, and I am so grateful to have you by my side. I hope this website brings a smile to your face and reminds you of how much I care about you. You are my everything, and I will always cherish our moments together. I love you more than words can express, and I can't wait to create more beautiful memories with you.
+</p>
+
+<button class="main-button" onclick="showMessage()">
+    Click This One
+</button>
+
+</div>
+
+<div class = "gallery">
+
+
+<img src="images/12.jpg" width="300">
+<img src="images/13.jpg" width="300">
+<img src="images/14.jpg" width="300">
+<img src="images/15.jpg" width="300">
+<img src="images/16.jpg" width="300">
+<img src="images/17.jpg" width="300">
+<img src="images/18.jpg" width="300">
+<img src="images/19.jpg" width="300">
+<img src="images/20.jpg" width="300">
+<img src="images/21.jpg" width="300">
+<img src="images/22.jpg" width="300">
+<img src="images/23.jpg" width="300">
+<img src="images/24.jpg" width="300">
+<img src="images/25.jpg" width="300">
+<img src="images/26.jpg" width="300">
+<img src="images/27.jpg" width="300">
+<img src="images/28.jpg" width="300">
+<img src="images/29.jpg" width="300">
+<img src="images/30.jpg" width="300">
+<img src="images/31.jpg" width="300">
+<img src="images/32.jpg" width="300">
+
+</div>
+
+<footer>© 2026 My Baby</footer>
+
+</div>
+
+<script>
+
+function unlockWebsite(){
+
+    let passcode = document.getElementById("passcode").value;
+
+    let correctPasscode = "November.07.2025";
+
+    if(passcode === correctPasscode) {
+
+        document.getElementById("lockscreen").style.display = "none";
+        document.getElementById("website").style.display = "block";
+
+    }
+
+    else{
+        document.getElementById("message").innerHTML = "Incorrect Passcode 💔";
+
+    }
+}
+
+
+function showMessage(){
+    alert("Thank you for always staying by my side 💖");
+
+}
+
+</script>
+</body>
+</html>
